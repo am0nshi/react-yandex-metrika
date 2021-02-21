@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:exp": "rm -rf lib && cross-env NODE_ENV=production ./node_modules/.bin/babel src/ --out-dir lib --ignore ./src/__test__",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
