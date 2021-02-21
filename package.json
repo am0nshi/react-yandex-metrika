@@ -4,7 +4,8 @@
   "description": "Yandex Metrika component for React",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:exp": "rm -rf lib && cross-env NODE_ENV=production ./node_modules/.bin/babel src/ --out-dir lib --ignore ./src/__test__",
   },
   "repository": {
     "type": "git",
